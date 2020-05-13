@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Từ điển</title>
+    <style>
+        #nhap {
+            width: 200px;
+            height: 30px;
+        }
+
+        #phim {
+            width: 60px;
+            height: 30px;
+        }
+
+        #xuat {
+            width: 200px;
+            height: 30px;
+            border: solid;
+            border-color: grey;
+            border-width: 1px;
+            padding-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Từ điển Anh - Việt</h1>
+    <p>Tiếng Anh:</p>
+    <input type="text" id="nhap" value="" /></br></br>
+    <input type="button" id="phim" onclick="nhapDuLieu()" value="Dịch" />
+    <p>Tiếng Việt:</p>
+    <option id="xuat"></option>
+    <script>
+        let eng = ['student', 'school', 'teacher', 'class', 'table', 'laptop', 'telephone', 'book', 'pen'];
+        let viet = ['học sinh', 'trường học', 'giáo viên', 'lớp học', 'cái bàn', 'máy tính xách tay', 'điện thoại', 'sách', 'cây bút'];
+        
+        function nhapDuLieu() 
+        {
+            let user = document.getElementById('nhap').value;
+            let i
+            for (i = 0; i < eng.length; i++) {
+                if (user === eng[i]) document.getElementById('xuat').innerHTML = viet[i];
+            }
+        }
+    </script>
+</body>
+
+</html>
