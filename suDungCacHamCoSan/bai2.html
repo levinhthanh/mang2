@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chèn giữa các phần tử</title>
+</head>
+
+<body>
+    <script>
+        let num = prompt('Nhập vào một số:')
+        let mangSo = [];
+        let leng = num.length;
+        for (i = 0; i < leng; i++) {
+            mangSo[i] = parseInt(num[i]);
+        }
+        document.write('Số bạn đã nhập là: ' + num + '</br></br>')
+        for (i = 1; i < leng; i++) {
+            if (mangSo[i - 1] % 2 === 0 & mangSo[i] % 2 === 0) {
+                for (j = leng; j > i; j--) {
+                    mangSo[j] = mangSo[j - 1];
+                }
+                mangSo[i] = '-';
+                leng++;
+            }
+        }
+        document.write('Mảng sau khi chèn là: ' + mangSo)
+    </script>
+</body>
+
+</html>

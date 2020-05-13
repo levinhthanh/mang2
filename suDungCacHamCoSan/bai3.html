@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuyển đổi chữ hoa - chữ thường</title>
+</head>
+<body>
+    <script>
+        let vao= prompt('Nhập vào 1 câu:')
+        let ra=[];
+        let i;
+        const UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        const LOWER = 'abcdefghijklmnopqrstuvwxyz';
+        for(i=0;i<vao.length;i++)
+        {
+            if(UPPER.indexOf(vao[i])!== -1)
+            ra.push(vao[i].toLowerCase());
+            
+            else if(LOWER.indexOf(vao[i])!== -1)
+            ra.push(vao[i].toUpperCase());
+                 else ra[i]='&ensp;';
+        }
+        for(i=0;i<vao.length;i++)
+        {
+            document.write(ra[i])
+        }
+    </script>
+</body>
+</html>
