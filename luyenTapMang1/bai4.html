@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mảng số nguyên</title>
+</head>
+<body>
+    <script>
+        let mang=[];
+        let mangDao=[];
+        document.write('<br> Mảng bạn nhập là: <br>');
+        for(i=0;i<10;i++)
+        {
+            mang[i]= parseInt(prompt('Nhập phần tử thứ '+(i+1)));
+            document.write(mang[i]+' ');
+        }
+        document.write('<br> Mảng bạn đảo là: <br>');
+        for(i=0;i<10;i++)
+        {
+            mangDao[i]=mang[mang.length-1-i];
+            document.write(mangDao[i]+' ');
+        }
+        
+    </script>
+</body>
+</html>

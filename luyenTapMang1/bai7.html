@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mảng số nguyên</title>
+</head>
+<body>
+    <script>
+        let mang=[];
+        let v;
+        document.write('<br> Mảng bạn nhập là: <br>');
+        for(i=0;i<10;i++)
+        {
+            mang[i]= parseInt(prompt('Nhập phần tử thứ '+(i+1)));
+            document.write(mang[i]+' ');
+        }
+        let len = mang.length;
+        v=parseInt(prompt('Nhập số cần xóa:'));
+        document.write('<br> Số bạn cần xóa là: '+v);
+        for(i=0;i<10;i++)
+        {
+            if(mang[i]===v) 
+            {
+                for(let j=i;j<len-1;j++)
+                {
+                    mang[j]=mang[j+1];                    
+                }
+                mang[len-1]=0;
+            }
+        }
+        document.write('<br> Mảng bạn xóa '+v+' là: <br>');
+        for(i=0;i<10;i++)
+        {
+            document.write(mang[i]+' ');
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mảng số nguyên</title>
+</head>
+<body>
+    <script>
+        let mang=[];
+        
+        document.write('<br> Mảng bạn nhập là: <br>');
+        for(i=0;i<10;i++)
+        {
+            mang[i]= parseInt(prompt('Nhập phần tử thứ '+(i+1)));
+            document.write(mang[i]+' ');
+        }
+        let len=mang.length;
+        for(i=0;i<len;i++)
+        {
+            let max=mang[i];
+            for(j=i;j<len;j++)
+            {
+                if(mang[i]<mang[j+1])
+                { 
+                     let tmp=mang[i];
+                     mang[i]=mang[j+1];
+                     mang[j+1]=tmp;
+                }
+            }
+        }
+        document.write('<br> Mảng bạn vừa sắp xếp là: <br>');
+        for(i=0;i<10;i++)
+        {
+            document.write(mang[i]+' ');
+        }
+        
+    </script>
+</body>
+</html>

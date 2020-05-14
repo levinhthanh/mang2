@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mảng số nguyên</title>
+</head>
+<body>
+    <script>
+        let a=[];
+        let b=[];
+        let c=[];
+        
+        document.write('<br> Mảng a bạn nhập là: <br>');
+        for(i=0;i<10;i++)
+        {
+            a[i]= parseInt(prompt('Nhập mảng a phần tử thứ '+(i+1)));
+            document.write(a[i]+' ');
+        }
+        document.write('<br> Mảng b bạn nhập là: <br>');
+        for(i=0;i<10;i++)
+        {
+            b[i]= parseInt(prompt('Nhập mảng b phần tử thứ '+(i+1)));
+            document.write(b[i]+' ');
+        }
+        document.write('<br> Mảng c = a + b là: <br>');
+        for(i=0;i<10;i++)
+        {
+            c[i]=a[i];
+            c[i+10]=b[i];
+        }
+        for(i=0;i<20;i++)
+        {
+            document.write(c[i]+' ');
+        }
+    </script>
+</body>
+</html>

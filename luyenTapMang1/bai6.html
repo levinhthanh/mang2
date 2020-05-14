@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mảng số nguyên</title>
+</head>
+<body>
+    <script>
+        let mang=[];
+        let v;
+        let flag=false;
+        document.write('<br> Mảng bạn nhập là: <br>');
+        for(i=0;i<10;i++)
+        {
+            mang[i]= parseInt(prompt('Nhập phần tử thứ '+(i+1)));
+            document.write(mang[i]+' ');
+        }
+        v=parseInt(prompt('Nhập số cần tìm:'));
+        document.write('<br> Số bạn cần kiểm tra là: '+v);
+        for(i=0;i<10;i++)
+        {
+            if(mang[i]===v) {flag=true; break;}
+        }
+        if(flag) document.write('<br> => Có số cần tìm trong mảng');
+        else document.write('<br> => Không có số cần tìm trong mảng');
+        
+    </script>
+</body>
+</html>
