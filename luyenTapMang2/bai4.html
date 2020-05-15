@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let mang=['Thành','Nam','0914800124','10 Đỗ Nam','Học viên'];
+        let gop=mang.join();
+        let len=gop.length;
+        let count=0;
+        const CHECK='ABCDĐEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzÀÁẢÃẠĂẮẰẲẴẶÂẤẦẨẪẬÊẾỀỂỄỆÍÌỈĨỊÓÒỎÕỌÔỐỒỔỖỘƠỚỜỞỠỢÚÙỦŨỤƯỨỪỬỮỰÝỲỶỸỴáàảãạắằẳẵặấầẫẩậéèẻẽẹêếềểễệíìỉĩịóòỏõọôốồổỗộơớờởỡợúùủũụưứừửữựýỳỷỹỵ';
+        for(i=0;i<len;i++)
+        {
+            if(CHECK.indexOf(gop[i]) ===-1){}
+            else {count+=1;}
+        }
+        document.write('<br> Số ký tự chữ của mảng là: '+count);
+    </script>
+</body>
+</html>

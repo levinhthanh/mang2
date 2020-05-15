@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let mang=[];
+        document.write('Mảng vừa nhập là: <br>');
+        for(i=0;i<10;i++)
+        {
+            mang[i]=prompt('Nhập mang['+i+']:');
+            document.write(mang[i]+' ');
+        }
+        document.write('<br> Mảng được đảo thành: <br>');
+        for(i=9;i>=0;i--)
+        {
+            document.write(mang[i]+' ');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let mang=['Thành','Nam','0914800124','10 Đỗ Nam','Học viên'];
+        mang.length=5;
+        gop=mang.join();
+        let len=gop.length;
+        let count=0;
+        for(i=0;i<len;i++)
+        {
+         switch(gop[i])
+         {
+             case '0': count+=1;
+                       break;
+             case '1': count+=1;
+             break;
+             case '2': count+=1;
+             break;
+             case '3': count+=1;
+             break;
+             case '4': count+=1;
+             break;
+             case '5': count+=1;
+             break;
+             case '6': count+=1;
+             break;
+             case '7': count+=1;
+             break;
+             case '8': count+=1;
+             break;
+             case '9': count+=1;
+             break;
+             default:
+         }
+        }
+        document.write('Mảng có '+count+' phần tử số');
+    </script>
+</body>
+</html>
